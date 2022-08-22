@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/8fcb626fc8.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="banner">
+  </div>
+  <div class="main">
+    <div class="left">
+      <div class="left_main">
+        <div class="profile_top">
+        <div class="pro_pic"></div>
+        <h2>Ratib Qahhar</h2>
+        <h4>Electrical Engineering Student</h4>
+        <p><i class="fa-solid fa-location-dot"></i>Ontario, Canada</p>
+        <button class="pro_message" type="button" name="button"><i class="fa-solid fa-envelope"></i>Message</button>
+        <div class="socials">
+          <button onclick="window.open('https://www.instagram.com/q.rememberthat/')" type="button" name="button"><i class="fa-brands fa-instagram"></i></button>
+          <button onclick="window.open('https://www.linkedin.com/in/easy-chip-bb48b518b/')" type="button" name="button"><i class="fa-brands fa-linkedin"></i></button>
+          <button onclick="window.open('https://github.com/Ratib-Qahhar')" type="button" name="button"><i class="fa-brands fa-github"></i></button>
+          <button onclick="window.open('https://www.facebook.com/ratibarif.qahhar')" type="button" name="button"><i class="fa-brands fa-facebook"></i></button>
+        </div>
+        </div>
+        <div class="profile_bottom">
+        <p class="profile_bottom_tittle">Software</p>
+        <div class="software">
+          <div class="soft_tabs" style="border-bottom:1px solid gray;">
+            <p><div class="vsc_logo soft_box"></div>Visual Studio Code</p> 
+          </div>
+          <div class="soft_tabs" style="border-bottom:1px solid gray;">
+            <p><div class="pycharm_logo soft_box"></div>Pycharm</p>
+          </div>
+          <div class="soft_tabs" style="border-bottom:1px solid gray;">
+            <p><div class="atom_logo soft_box"></div>Atom</p>
+          </div>
+          <div class="soft_tabs">
+            <p><div class="matlab_logo soft_box"></div>Matlab</p>
+          </div>
+        </div>
+        <p class="profile_bottom_tittle" style="margin-top: 20px;">Courses</p>
+        <div class="courses">
+          <div class="course_cell" onclick="window.open('https://www.udemy.com/course/100-days-of-code/')" style="border-bottom:1px solid gray;">
+            <div class="course_info">
+              <p>100 Days of Code <br> Dr.Angela Yu</p> 
+            </div>
+            <div class="course_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </div>
+          <div class="course_cell" onclick="window.open('https://www.udemy.com/course/the-complete-web-development-bootcamp/')" style="border-bottom:1px solid gray;">
+            <div class="course_info">
+              <p>The Complete Web Development Bootcamp <br> Dr.Angela Yu</p> 
+            </div>
+            <div class="course_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </div>
+          <div class="course_cell" onclick="window.open('https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513')">
+            <div class="course_info">
+              <p>Data Strcutures and Algorithms <br> Udacity </p> 
+            </div>
+            <div class="course_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right_top">
+        <div class="flag html">
+          <div class="mover">
+            <div class="logo">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="tip"></div>
+            <div class="butt"></div>
+          </div>
+        </div>
+        <div class="flag java">
+          <div class="mover">
+            <div class="logo">
+              <i class="fa-brands fa-java"></i>            </div>
+            <div class="tip"></div>
+            <div class="butt"></div>
+          </div>
+        </div>
+        <div class="flag css">
+          <div class="mover">
+            <div class="logo">
+              <i class="fa-brands fa-css3-alt"></i>            </div>
+            <div class="tip"></div>
+            <div class="butt"></div>
+          </div>
+        </div>
+        <div class="flag python">
+          <div class="mover">
+            <div class="logo">
+              <i class="fa-brands fa-python"></i>            </div>
+            <div class="tip"></div>
+            <div class="butt"></div>
+          </div>
+        </div>
+        <div class="flag sql">
+          <div class="mover">
+            <div class="logo">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="tip"></div>
+            <div class="butt"></div>
+          </div>
+        </div>
+      </div>
+      <div class="right_middle">
+        <button class="btn active" onclick="openCity(event, 'all')">ALL</button>
+        <button class="btn" onclick="openCity(event, 'web')">WEB</button>
+        <button class="btn" onclick="openCity(event, 'app')">APP</button>
+      </div>
+      <div class="right_bottom">
+        <div id="all" class="content" style="display:grid;">
+          <button class="card_btn card_one" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_two" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_three" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_four" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_five" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_six" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_seven" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_eight" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_nine" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_ten" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_eleven" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_twelve" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_thirteen" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+        </div>
+        <div id="web" class="content" style="display:none;">
+          <button class="card_btn card_two" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_three" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_four" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_six" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_eight" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_nine" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_eleven" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_twelve" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_thirteen" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+        </div>
+        <div id="app" class="content" style="display:none;">
+          <button class="card_btn card_one" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_five" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_seven" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+          <button class="card_btn card_ten" onclick="window.open('http://www.google.com')">
+            <div class="card_info">
+              <div class="card_top">
+                <div class="lang">html</div>
+                <div class="lang">js</div>
+                <div class="lang">css</div>
+              </div>
+              <div class="card_bottom">
+                <h2>Calculator</h2>
+                <h4>Ratib Arif</h4>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p><i class="fa-regular fa-copyright"></i> <p>2022 RATIB QAHHAR</p></p>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

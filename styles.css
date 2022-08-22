@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: whitesmoke;
+}
+
+.banner{
+  z-index: -1;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  background-image: url("img/banner.jpg");
+  background-position: center;
+  background-size: fill;
+}
+
+.main{
+  margin-top: 100px;
+  display:flex;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(165, 42, 42, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fa-copyright{
+  margin: 5px;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  min-width: 300px;
+  height: auto;
+  background-color: rgba(127, 255, 212, 0);
+}
+
+.left_main{
+  height: auto;
+  width: 80%;
+  box-shadow: 0 0 1px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.profile_top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  background-color: whitesmoke;
+}
+
+.profile_top h2{
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.profile_top h4{
+  margin-bottom: 10px;
+  color: #676767;
+  font-weight: 500;
+}
+
+.profile_top p{
+  margin-bottom: 20px;
+  color: #676767;
+  font-weight: 500;
+}
+
+.profile_top .fa-location-dot{
+  margin: 0 10px;
+  color: #676767;
+}
+
+.pro_message{
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  width: 70%;
+  font-size: 1.2rem;
+  background-color: #196fca;
+  padding: 10px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.profile_top .fa-envelope{
+  margin-right: 15px;
+}
+
+.pro_pic{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-image: url("img/image.png");
+  background-position: center;
+  background-size: fill;
+  margin-bottom: 10px;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.profile_top .socials button{
+  margin: 0 5px;
+  border: none;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.fa-instagram{
+  color: #833ab4;
+}
+.fa-linkedin{
+  color: #0077b5;
+}
+.fa-github{
+  color: black;
+}
+.fa-facebook{
+  color: #4267B2;
+}
+
+.profile_top .socials i{
+  font-size: 2rem;
+}
+
+.profile_bottom{
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 450px;
+  background-color: whitesmoke;
+}
+
+.profile_bottom_tittle{
+ color: #676767; 
+ text-transform: uppercase;
+ font-weight: 800;
+ font-size: 0.8rem;
+ letter-spacing: 1px;
+ margin-bottom: 10px;
+}
+
+.software{
+  border: 1px solid gray;
+  border-radius: 12px;
+}
+.software .soft_tabs{
+  padding: 10px;
+  display: flex;
+}
+
+.soft_box{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.vsc_logo{
+  background-image: url("img/vsc-test.png");
+  background-position: center;
+  background-size: fill;
+}
+.pycharm_logo{
+  background-image: url("img/testing.png");
+  background-position: center;
+  background-size: fill;
+}
+.atom_logo{
+  background-image: url("img/atom-test.png");
+  background-position: center;
+  background-size: fill;
+}
+.matlab_logo{
+  background-image: url("img/matlab-test.png");
+  background-position: center;
+  background-size: fill;
+}
+
+.courses{
+  border: 1px solid gray;
+  border-radius: 12px;
+}
+
+.course_cell{
+  cursor: pointer;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 255, 0);
+}
+
+.right_top{
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.right_middle{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(181, 65, 192, 0);
+}
+.btn{
+  cursor: pointer;
+  padding-left: 5px;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 20px;
+  height: 100%;
+  width: 70px;
+  font-weight: bold;
+  letter-spacing: 3px ;
+  font-size: 1rem;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.btn:hover:not(.active){
+  transition: 0.2s;
+  background-color: rgba(115, 115, 115, 0.232);
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.2); 
+}
+
+.active{
+  color: whitesmoke;
+  background-color: black;
+}
+
+.right_bottom{
+  width: 100%;
+  background-color: #f0652900;
+}
+
+.content{
+  padding: 10px;
+  padding-right: 30px;
+  /* display: grid; */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-row-gap: 0px;
+  grid-gap: 10px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.card_btn{
+  margin: 5px;
+  height: 0;
+  padding-bottom: 60%;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_one{
+  background-image: url("img/calculator.jpg");
+}
+.card_two{
+  background-image: url("img/calendar.jpg");
+}
+.card_three{
+  background-image: url("img/cook_book.jpg");
+}
+.card_four{
+  background-image: url("img/countdown.jpg");
+}
+.card_five{
+  background-image: url("img/movie.jpg");
+}
+.card_six{
+  background-image: url("img/social_media.jpg");
+}
+.card_seven{
+  background-image: url("img/stock.jpg");
+}
+.card_eight{
+  background-image: url("img/todo.jpg");
+}
+.card_nine{
+  background-image: url("img/blueprint.jpg");
+}
+.card_ten{
+  background-image: url("img/diy.jpg");
+}
+.card_eleven{
+  background-image: url("img/music.jpg");
+}
+.card_twelve{
+  background-image: url("img/parking.jpg");
+}
+.card_thirteen{
+  background-image: url("img/travel.jpg");
+}
+
+.card_info{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card_top{
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.lang{
+  color: whitesmoke;
+  padding: 5px;
+}
+
+.card_bottom{
+  font-size: 1rem;
+  width: 100%;
+  background: linear-gradient(rgba(101, 101, 101, 0.036), rgba(116, 116, 116, 0.35));
+  color: whitesmoke;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+}
+
+.card_btn:hover .card_info{
+  opacity: 1;
+}
+
+.flag{
+  cursor: pointer;
+  margin: 0 5px;
+  overflow: hidden;
+  width: 35px;
+  height: 70px;
+  background-color: red;
+}
+
+.html{
+  background-color: #f06529;
+}
+.java{
+  background-color:#5382a1 ;
+}
+.css{
+  background-color: #0F5298;
+}
+.python{
+  background-color: #ffbf00;
+}
+.sql{
+  background-color: #4098f6;
+}
+.mover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.logo{
+  position: absolute;
+  top: 210px;
+  padding-top: 50px;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.tip{
+  margin-top: 20px;
+  width: 0;
+  height: 0;
+  border: 35px solid transparent;
+  border-bottom-color:whitesmoke ;
+}
+
+.butt{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.mover:hover{
+  transition: 0.3s;
+  padding-top: 10px;
+}
+
+.mover:hover .logo{
+  transition: 0.3s;
+  top:220px;
+}
