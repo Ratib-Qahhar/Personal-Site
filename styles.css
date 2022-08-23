@@ -299,6 +299,7 @@ body{
   border: none;
   background-position: center;
   background-size: cover;
+  transition: 0.5S;
 }
 
 .card_one{
@@ -376,6 +377,11 @@ body{
   opacity: 1;
 }
 
+.card_btn:hover{
+  scale: 1.1;
+  transition: 0.5s;
+}
+
 .flag{
   cursor: pointer;
   margin: 0 5px;
@@ -440,4 +446,56 @@ body{
 .mover:hover .logo{
   transition: 0.3s;
   top:220px;
+}
+
+#hidden{
+  display: none;
+}
+
+#profile_hidden{
+  display: none;
+}
+
+@media (max-width:1100px){
+  .left{
+    display: none;
+  }
+  .right_top{
+    display: none;
+  }
+  #hidden{
+    display: flex;
+    margin-top: 250px;
+    width: 100%;
+  }
+  #profile_hidden{
+    display: flex;
+    background-color: #0076b500;
+    position: absolute;
+    top: 150px;
+  }
+
+  .pro_pic{
+    height: 170px;
+    width: 170px;  
+    border: 10px solid whitesmoke;
+  }
+
+  .pro_message{
+    width: 250px;
+  }
+
+  .right_middle{
+    margin-top: -20px;
+  }
+}
+@media (max-width:700px){
+  #hidden{
+    display: none;
+  }
+
+  .right_middle{
+    margin-top: 300px;
+  }
+
 }
