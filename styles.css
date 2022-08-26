@@ -24,6 +24,7 @@ body {
 }
 
 .message_close_btn i{
+  cursor:pointer;
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -42,11 +43,11 @@ body {
 
 .message_top{
   z-index: 3;
-  visibility: hidden;
+  display: none;
 }
 
 .open-popup{
-  visibility: visible;
+  display: block;
 }
 
 .message_box{
