@@ -12,6 +12,37 @@
 </head>
 
 <body>
+  <div class="message_top">
+    <div class="message_back" onclick="closePopup()"></div>
+    <div class="message_box">
+      <h1 class="message_header">Reach Out</h1>
+      <button class="message_close_btn" onclick="closePopup()"><i class="fa-solid fa-xmark"></i></button>
+      <form class="form" action="https://formsubmit.co/0565a8bb98813b3a93f6f1f85965d5d3" method="POST">
+        <input type="hidden" name="_subject" value="New Website submission!">
+        <div class="message_name">
+          <div class="message_name_div">
+            <h3>First Name</h3>
+            <input class="message_info_inside" type="text" name="first_name" required placeholder="First Name">
+          </div>
+          <div class="message_name_div">
+            <h3>Last Name</h3>
+            <input class="message_info_inside" type="text" name="last" required placeholder="Last Name">
+          </div>
+        </div>
+        <div class="message_email">
+          <h3>Email Address</h3>
+          <input class="message_info_inside" type="email" name="_replyto" required placeholder="Email Address">
+        </div>
+        <div class="message_text">    
+          <h3>Your Message</h3>    
+          <textarea placeholder="Your Message" class="message_message" name="message" rows="10" required></textarea>
+        </div>
+        <div class="message_submit">
+          <button class="message_btn" type="submit">Submit Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
   <div class="banner">
   </div>
   <div class="right_top" id="hidden">
@@ -27,7 +58,8 @@
     <div class="flag java">
       <div class="mover">
         <div class="logo">
-          <i class="fa-brands fa-java"></i>            </div>
+          <i class="fa-brands fa-java"></i>
+        </div>
         <div class="tip"></div>
         <div class="butt"></div>
       </div>
@@ -35,7 +67,8 @@
     <div class="flag css">
       <div class="mover">
         <div class="logo">
-          <i class="fa-brands fa-css3-alt"></i>            </div>
+          <i class="fa-brands fa-css3-alt"></i>
+        </div>
         <div class="tip"></div>
         <div class="butt"></div>
       </div>
@@ -43,7 +76,8 @@
     <div class="flag python">
       <div class="mover">
         <div class="logo">
-          <i class="fa-brands fa-python"></i>            </div>
+          <i class="fa-brands fa-python"></i>
+        </div>
         <div class="tip"></div>
         <div class="butt"></div>
       </div>
@@ -75,55 +109,59 @@
     <div class="left">
       <div class="left_main">
         <div class="profile_top">
-        <div class="pro_pic"></div>
-        <h2>Ratib Qahhar</h2>
-        <h4>Electrical Engineering Student</h4>
-        <p><i class="fa-solid fa-location-dot"></i>Ontario, Canada</p>
-        <button class="pro_message" type="button" name="button"><i class="fa-solid fa-envelope"></i>Message</button>
-        <div class="socials">
-          <button onclick="window.open('https://www.instagram.com/q.rememberthat/')" type="button" name="button"><i class="fa-brands fa-instagram"></i></button>
-          <button onclick="window.open('https://www.linkedin.com/in/easy-chip-bb48b518b/')" type="button" name="button"><i class="fa-brands fa-linkedin"></i></button>
-          <button onclick="window.open('https://github.com/Ratib-Qahhar')" type="button" name="button"><i class="fa-brands fa-github"></i></button>
-          <button onclick="window.open('https://www.facebook.com/ratibarif.qahhar')" type="button" name="button"><i class="fa-brands fa-facebook"></i></button>
-        </div>
+          <div class="pro_pic"></div>
+          <h2>Ratib Qahhar</h2>
+          <h4>Electrical Engineering Student</h4>
+          <p><i class="fa-solid fa-location-dot"></i>Ontario, Canada</p>
+          <button class="pro_message" type="button" name="button" onclick="openPopup()"><i class="fa-solid fa-envelope"></i>Message</button>
+          <div class="socials">
+            <button onclick="window.open('https://www.instagram.com/q.rememberthat/')" type="button" name="button"><i class="fa-brands fa-instagram"></i></button>
+            <button onclick="window.open('https://www.linkedin.com/in/easy-chip-bb48b518b/')" type="button" name="button"><i class="fa-brands fa-linkedin"></i></button>
+            <button onclick="window.open('https://github.com/Ratib-Qahhar')" type="button" name="button"><i class="fa-brands fa-github"></i></button>
+            <button onclick="window.open('https://www.facebook.com/ratibarif.qahhar')" type="button" name="button"><i class="fa-brands fa-facebook"></i></button>
+          </div>
         </div>
         <div class="profile_bottom">
-        <p class="profile_bottom_tittle">Software</p>
-        <div class="software">
-          <div class="soft_tabs" style="border-bottom:1px solid gray;">
-            <p><div class="vsc_logo soft_box"></div>Visual Studio Code</p> 
-          </div>
-          <div class="soft_tabs" style="border-bottom:1px solid gray;">
-            <p><div class="pycharm_logo soft_box"></div>Pycharm</p>
-          </div>
-          <div class="soft_tabs" style="border-bottom:1px solid gray;">
-            <p><div class="atom_logo soft_box"></div>Atom</p>
-          </div>
-          <div class="soft_tabs">
-            <p><div class="matlab_logo soft_box"></div>Matlab</p>
-          </div>
-        </div>
-        <p class="profile_bottom_tittle" style="margin-top: 20px;">Courses</p>
-        <div class="courses">
-          <div class="course_cell" onclick="window.open('https://www.udemy.com/course/100-days-of-code/')" style="border-bottom:1px solid gray;">
-            <div class="course_info">
-              <p>100 Days of Code <br> Dr.Angela Yu</p> 
+          <p class="profile_bottom_tittle">Software</p>
+          <div class="software">
+            <div class="soft_tabs" style="border-bottom:1px solid gray;">
+              <p>
+              <div class="vsc_logo soft_box"></div>Visual Studio Code</p>
             </div>
-            <div class="course_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-          </div>
-          <div class="course_cell" onclick="window.open('https://www.udemy.com/course/the-complete-web-development-bootcamp/')" style="border-bottom:1px solid gray;">
-            <div class="course_info">
-              <p>The Complete Web Development Bootcamp <br> Dr.Angela Yu</p> 
+            <div class="soft_tabs" style="border-bottom:1px solid gray;">
+              <p>
+              <div class="pycharm_logo soft_box"></div>Pycharm</p>
             </div>
-            <div class="course_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-          </div>
-          <div class="course_cell" onclick="window.open('https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513')">
-            <div class="course_info">
-              <p>Data Strcutures and Algorithms <br> Udacity </p> 
+            <div class="soft_tabs" style="border-bottom:1px solid gray;">
+              <p>
+              <div class="atom_logo soft_box"></div>Atom</p>
             </div>
-            <div class="course_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            <div class="soft_tabs">
+              <p>
+              <div class="matlab_logo soft_box"></div>Matlab</p>
+            </div>
           </div>
-        </div>
+          <p class="profile_bottom_tittle" style="margin-top: 20px;">Courses</p>
+          <div class="courses">
+            <div class="course_cell" onclick="window.open('https://www.udemy.com/course/100-days-of-code/')" style="border-bottom:1px solid gray;">
+              <div class="course_info">
+                <p>100 Days of Code <br> Dr.Angela Yu</p>
+              </div>
+              <div class="course_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+            <div class="course_cell" onclick="window.open('https://www.udemy.com/course/the-complete-web-development-bootcamp/')" style="border-bottom:1px solid gray;">
+              <div class="course_info">
+                <p>The Complete Web Development Bootcamp <br> Dr.Angela Yu</p>
+              </div>
+              <div class="course_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+            <div class="course_cell" onclick="window.open('https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513')">
+              <div class="course_info">
+                <p>Data Strcutures and Algorithms <br> Udacity </p>
+              </div>
+              <div class="course_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -141,7 +179,8 @@
         <div class="flag java">
           <div class="mover">
             <div class="logo">
-              <i class="fa-brands fa-java"></i>            </div>
+              <i class="fa-brands fa-java"></i>
+            </div>
             <div class="tip"></div>
             <div class="butt"></div>
           </div>
@@ -149,7 +188,8 @@
         <div class="flag css">
           <div class="mover">
             <div class="logo">
-              <i class="fa-brands fa-css3-alt"></i>            </div>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
             <div class="tip"></div>
             <div class="butt"></div>
           </div>
@@ -157,7 +197,8 @@
         <div class="flag python">
           <div class="mover">
             <div class="logo">
-              <i class="fa-brands fa-python"></i>            </div>
+              <i class="fa-brands fa-python"></i>
+            </div>
             <div class="tip"></div>
             <div class="butt"></div>
           </div>
@@ -526,7 +567,9 @@
     </div>
   </div>
   <div class="footer">
-    <p><i class="fa-regular fa-copyright"></i> <p>2022 RATIB QAHHAR</p></p>
+    <p><i class="fa-regular fa-copyright"></i>
+    <p>2022 RATIB QAHHAR</p>
+    </p>
   </div>
   <script type="text/javascript" src="script.js"></script>
 </body>
